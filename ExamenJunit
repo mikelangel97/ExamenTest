@@ -1,0 +1,49 @@
+package Ejercicio_examen1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class EjercicioJunitTest {
+	static int a = 100;
+	static int b = 20;
+	@Test
+	void testsumar() {
+	EjercicioJunit ejercicioJunit = new ejercicioJunit.sumar();
+	int resultado = ejercicioJunit.sumar(a, b);
+	
+	int esperado = 120;
+	
+	assertEquals(esperado, resultado);
+	}
+
+	@Test
+	void testrestar() {
+	EjercicioJunit ejercicioJunit = new ejercicioJunit.restar();
+	int resultado = ejercicioJunit.restar(a, b);
+	
+	int esperado = 80;
+	
+	assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	void testdividir() {
+	EjercicioJunit ejercicioJunit = new ejercicioJunit.dividir();
+	int resultado = ejercicioJunit.dividir(a, b);
+	
+	int esperado = 5;
+	
+	assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	void testmultiplicar() {
+	EjercicioJunit ejercicioJunit = new ejercicioJunit.multiplicar();
+	int resultado = ejercicioJunit.multiplicar(a, b);
+	
+	int esperado = 2000;
+	
+	assertEquals(esperado, resultado);
+	}
+}
